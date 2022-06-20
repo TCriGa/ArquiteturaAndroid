@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">Minha_Musica_Favorita</string>
+    <string name="titulo">Minha música Favorita</string>
+    <string name="descrissao_imagem_mundoBita">imagem do mundo bita com animas da fazendinha, vaca,porco, burro etc..</string>
+    <string name="nome_musica">Mundo Bita</string>
+    <string name="musica_fazendinha">\"Bom dia\n O Sol já nasceu lá na fazendinha\n Acorda o bezerro e a vaquinha\n Que já cocoricou dona galinha\n Levanta\n Que o cavalinho já pulou da cama\n Que o pintinho tirou seu pijama\n E o porquinho já caiu na lama\n Lá na fazendinha é manhã\n Deixa de manha e vem pra cá\n Que o Sol raiou e agora é hora de brincar\"</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="ver_detalhe">Ver Detalhe</string>
+    <string name="mundo_bita">Mundo Bita</string>
+    <string name="detalhe_mundoBita">O Mundo Bita é um projeto de entretenimento infantil criado pelo músico e designer Chaps Melo em 2010. Desde então, já lançou dezenas de singles musicais que arrecadaram diversas certificações de Ouro, Platina, Diamante e Diamante Duplo com milhões de singles vendidos.\n O Mundo Bita é feito de músicas, cores, aprendizado e alegria. Tudo com muito carinho para que pequenos e adultos brinquem e cresçam juntos.\n Venha viver aventuras divertidas com toda a turminha do Bita.\n Este mundo também é seu!</string>
+    <string name="lista_de_musicas">Lista de Musicas</string>
+    <string name="detalhe_banda">Detalhe da Banda</string>
+    <string name="lista_albuns">Lista de albuns</string>
+    <string name="musica_favorita">Minha música favorita</string>
+    <string name="descri_mundoBitaEoCirco">Imagem do mundo bita e o circo</string>
+    <string name="nome_do_album">Nome do Album</string>
+    <string name="nome_album">Nome do album</string>
+    <string name="descricao_do_album">Descrição do album</string>
+    <string name="detalhe_do_album">Detalhe do album</string>
+    <string name="album_favorito">Album favoritado com sucesso!</string>
+    <string name="musicas_do_album">Lista de Musicas</string>
+    <string name="musicas">Musicas - Mundo Bita</string>
+</resources>
