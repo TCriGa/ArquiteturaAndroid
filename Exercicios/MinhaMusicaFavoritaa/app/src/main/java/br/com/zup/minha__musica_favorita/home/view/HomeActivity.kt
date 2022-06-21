@@ -5,7 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import br.com.zup.minha__musica_favorita.R
 import br.com.zup.minha__musica_favorita.databinding.ActivityHomeBinding
-import br.com.zup.minha__musica_favorita.informacoes.detalhe.view.DetalheActivity
+import br.com.zup.minha__musica_favorita.information.detail.view.DetailActivity
 
 class HomeActivity : AppCompatActivity() {
 
@@ -16,10 +16,10 @@ class HomeActivity : AppCompatActivity() {
         binding = ActivityHomeBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        supportActionBar?.setTitle(getString(R.string.musica_favorita))
+        supportActionBar?.title = getString(R.string.musica_favorita)
 
         binding.buttonDetalhe.setOnClickListener {
-            startActivity(Intent(this, DetalheActivity::class.java))
+            startActivity(Intent(this, DetailActivity::class.java))
         }
 
 

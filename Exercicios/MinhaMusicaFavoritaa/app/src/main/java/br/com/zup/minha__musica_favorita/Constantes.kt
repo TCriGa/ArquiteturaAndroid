@@ -26,7 +26,7 @@ const val DESCRICAO_SENTIMENTO = "A música de estreia fala sobre uma emoção p
 const val BITA_E_NOSSO_MUNDO2 = " Bita e o nosso Mundo 2"
 const val ANO_BITA_MUNDO2 = "Ano 2021\n Produção : Sony Music"
 const val DESCRICAO_MUNDO2 = "A temporada Bita e o Nosso Mundo 2 foi pensada e planejada para apresentar temas abrangentes que fazem parte da rotina infantil, dando continuidade a Bita e o Nosso Mundo, lançada em 2018.  Ao todo são dez músicas, que estimulam as crianças a lidarem com suas próprias emoções, a entenderem melhor o ambiente, as pessoas e os conceitos que permeiam os primeiros anos de vida "
-const val CHAVE_ALBUM = "CHAVE_BITA"
+const val KEY_ALBUM = "CHAVE_BITA"
 const val MUSICAS_01 = "01 - A Tristeza Vai Passar --> Single : Sentimento"
 const val LETRA_MUSICA_01 = "\"LETRA DA MÚSICA \n" +
         "\n" +
@@ -306,4 +306,4 @@ const val LETRA_MUSICA_07 = "LETRA DA MÚSICA  \n" +
         "Eu tenho tanto pra lhe falar\n" +
         "Mas com palavras não sei dizer\n" +
         "Como é grande o meu amor por você\""
-const val CHAVE_MUSICA = "CHAVE_MUSICA"
+const val KEY_MUSIC = "CHAVE_MUSICA"

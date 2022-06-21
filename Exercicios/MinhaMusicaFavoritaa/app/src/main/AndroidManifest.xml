@@ -14,21 +14,14 @@
         android:theme="@style/Theme.Minha__Musica_Favorita"
         tools:targetApi="31">
         <activity
-            android:name=".LetraMusicaActivity"
-            android:exported="false" />
-        <activity
-            android:name=".informacoes.music.view.MusicaActivity"
+            android:name=".information.music.view.MusicActivity"
             android:exported="true" />
         <activity
-            android:name=".informacoes.album.view.AlbumActivity"
+            android:name=".information.album.view.AlbumActivity"
             android:exported="true" />
         <activity
-            android:name="br.com.zup.minha__musica_favorita.informacoes.detalhe.view.DetalheActivity"
+            android:name="br.com.zup.minha__musica_favorita.information.detail.view.DetailActivity"
             android:exported="true" />
-        <activity
-            android:name=".informacoes.DetallheActivity"
-            android:exported="false"
-            tools:ignore="MissingClass" />
         <activity
             android:name=".home.view.HomeActivity"
             android:exported="true">
