@@ -1,4 +1,4 @@
-package br.com.zup.minha__musica_favorita.detalhe.informacoes
+package br.com.zup.minha__musica_favorita.informacoes.detalhe.view
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -7,7 +7,7 @@ import android.view.View
 import android.view.ViewGroup
 import br.com.zup.minha__musica_favorita.R
 
-class InformacoesFragment : Fragment() {
+class DetalheFragment : Fragment() {
 
 
     override fun onCreateView(

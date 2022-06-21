@@ -1,11 +1,11 @@
-package br.com.zup.minha__musica_favorita.home
+package br.com.zup.minha__musica_favorita.home.view
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import br.com.zup.minha__musica_favorita.R
 import br.com.zup.minha__musica_favorita.databinding.ActivityHomeBinding
-import br.com.zup.minha__musica_favorita.detalhe.informacoes.InformacaoActivity
+import br.com.zup.minha__musica_favorita.informacoes.detalhe.view.DetalheActivity
 
 class HomeActivity : AppCompatActivity() {
 
@@ -19,7 +19,7 @@ class HomeActivity : AppCompatActivity() {
         supportActionBar?.setTitle(getString(R.string.musica_favorita))
 
         binding.buttonDetalhe.setOnClickListener {
-            startActivity(Intent(this, InformacaoActivity::class.java))
+            startActivity(Intent(this, DetalheActivity::class.java))
         }
 
 

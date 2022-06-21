@@ -6,16 +6,16 @@
     app:startDestination="@id/listaMusicaFragment">
     <fragment
         android:id="@+id/listaMusicaFragment"
-        android:name="br.com.zup.minha__musica_favorita.detalhe.album.listaMusica.ListaMusicaFragment"
+        android:name="br.com.zup.minha__musica_favorita.informacoes.music.view.MusicaFragment"
         android:label="fragment_lista_musica"
-        tools:layout="@layout/fragment_lista_musica" >
+        tools:layout="@layout/fragment_musica" >
         <action
             android:id="@+id/action_listaMusicaFragment_to_letraMusicaFragment"
             app:destination="@id/letraMusicaFragment" />
     </fragment>
     <fragment
         android:id="@+id/letraMusicaFragment"
-        android:name="br.com.zup.minha__musica_favorita.detalhe.album.listaMusica.LetraMusicaFragment"
+        android:name="br.com.zup.minha__musica_favorita.informacoes.album.listaMusica.LetraMusicaFragment"
         android:label="fragment_letra_musica"
         tools:layout="@layout/fragment_letra_musica" />
 </navigation>

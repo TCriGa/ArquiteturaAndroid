@@ -1,51 +1,11 @@
-package br.com.zup.minha__musica_favorita.detalhe.album
+package br.com.zup.minha__musica_favorita.informacoes.album.repository
 
-import android.content.Intent
-import android.os.Bundle
-import android.view.LayoutInflater
-import android.view.View
-import android.view.ViewGroup
-import androidx.fragment.app.Fragment
-import androidx.recyclerview.widget.GridLayoutManager
 import br.com.zup.minha__musica_favorita.*
-import br.com.zup.minha__musica_favorita.databinding.FragmentFotosBinding
-import br.com.zup.minha__musica_favorita.detalhe.album.adapter.AlbumMusicaAdapter
-import br.com.zup.minha__musica_favorita.model.Album
+import br.com.zup.minha__musica_favorita.informacoes.album.model.Album
 
-class FotosFragment : Fragment() {
+class AlbumRepository {
 
-    private lateinit var binding: FragmentFotosBinding
-
-    private val albumAdapter: AlbumMusicaAdapter by lazy {
-        AlbumMusicaAdapter(arrayListOf(), this::irParaDetalheClickFragment)
-    }
-
-    override fun onCreateView(
-        inflater: LayoutInflater, container: ViewGroup?,
-        savedInstanceState: Bundle?
-    ): View {
-        binding = FragmentFotosBinding.inflate(inflater, container, false)
-        return binding.root
-
-    }
-
-    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
-        super.onViewCreated(view, savedInstanceState)
-        exibirRecyclerView()
-
-
-    }
-
-    private fun exibirRecyclerView() {
-        adicionarItemListaAlbum()
-        binding.rvListaAlbum .adapter = albumAdapter
-        binding.rvListaAlbum .layoutManager = GridLayoutManager(context, 2)
-
-
-    }
-
-
-    private fun adicionarItemListaAlbum() {
+    fun getAlbum(): MutableList<Album> {
         val listaAlbum = mutableListOf<Album>()
 
         listaAlbum.add(
@@ -111,21 +71,6 @@ class FotosFragment : Fragment() {
                 ANO_NOSSO_DIA
             )
         )
-        albumAdapter.atualizarListaAlbum(listaAlbum)
-
-    }
-
-    private fun irParaDetalheClickFragment(album: Album) {
-
-        val intent = Intent(this.context, DetalheAlbumActivity::class.java).apply {
-            putExtra(CHAVE_ALBUM, album)
-        }
-
-        startActivity(intent)
+        return listaAlbum
     }
 }
-
-
-
-
-

@@ -1,17 +1,20 @@
-package br.com.zup.minha__musica_favorita.detalhe.album
+package br.com.zup.minha__musica_favorita.informacoes.album.view
 
 import android.os.Bundle
 import android.view.MenuItem
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
+import androidx.lifecycle.ViewModelProvider
 import br.com.zup.minha__musica_favorita.CHAVE_ALBUM
 import br.com.zup.minha__musica_favorita.R
 import br.com.zup.minha__musica_favorita.databinding.ActivityAlbumBinding
-import br.com.zup.minha__musica_favorita.model.Album
+import br.com.zup.minha__musica_favorita.informacoes.album.model.Album
+import br.com.zup.minha__musica_favorita.informacoes.album.viewmodel.AlbumViewModel
 
-class DetalheAlbumActivity : AppCompatActivity() {
+class AlbumActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityAlbumBinding
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -23,7 +26,7 @@ class DetalheAlbumActivity : AppCompatActivity() {
         recuperarInformacoesAlbum()
 
         binding.imagemFavorito.setOnClickListener {
-            Toast.makeText(this,getString(R.string.album_favorito),Toast.LENGTH_SHORT).show()
+            Toast.makeText(this, getString(R.string.album_favorito), Toast.LENGTH_SHORT).show()
         }
     }
 
@@ -42,10 +45,10 @@ class DetalheAlbumActivity : AppCompatActivity() {
     }
 
     fun receberInformacoes(album: Album) {
-        binding.imageDetalhe.setImageResource(album.getImagem())
-        binding.textAno.text = album.getAnoProducao()
-        binding.textDescricao.text = album.getDescricao()
-        binding.textNome.text = album.getNomeAlbum()
+        binding.imageDetalhe.setImageResource(album.imagem)
+        binding.textAno.text = album.anoProducao
+        binding.textDescricao.text = album.descricao
+        binding.textNome.text = album.nomeAlbum
     }
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {

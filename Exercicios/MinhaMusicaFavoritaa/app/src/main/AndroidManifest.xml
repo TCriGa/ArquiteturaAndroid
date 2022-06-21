@@ -17,20 +17,20 @@
             android:name=".LetraMusicaActivity"
             android:exported="false" />
         <activity
-            android:name=".detalhe.album.listaMusica.LetraMusicaActivity"
+            android:name=".informacoes.music.view.MusicaActivity"
             android:exported="true" />
         <activity
-            android:name=".detalhe.album.DetalheAlbumActivity"
+            android:name=".informacoes.album.view.AlbumActivity"
             android:exported="true" />
         <activity
-            android:name=".detalhe.informacoes.InformacaoActivity"
+            android:name="br.com.zup.minha__musica_favorita.informacoes.detalhe.view.DetalheActivity"
             android:exported="true" />
         <activity
-            android:name=".detalhe.DetallheActivity"
+            android:name=".informacoes.DetallheActivity"
             android:exported="false"
             tools:ignore="MissingClass" />
         <activity
-            android:name=".home.HomeActivity"
+            android:name=".home.view.HomeActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

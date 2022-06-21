@@ -1,19 +1,19 @@
-package br.com.zup.minha__musica_favorita.detalhe.album.listaMusica
+package br.com.zup.minha__musica_favorita.informacoes.musica.view
 
 import android.os.Bundle
 import android.view.MenuItem
 import androidx.appcompat.app.AppCompatActivity
 import br.com.zup.minha__musica_favorita.CHAVE_MUSICA
 import br.com.zup.minha__musica_favorita.R
-import br.com.zup.minha__musica_favorita.databinding.ActivityLetraMusicaBinding
-import br.com.zup.minha__musica_favorita.model.Musica
+import br.com.zup.minha__musica_favorita.databinding.ActivityMusicaBinding
+import br.com.zup.minha__musica_favorita.informacoes.musica.model.Music
 
-class LetraMusicaActivity : AppCompatActivity() {
+class MusicaActivity : AppCompatActivity() {
 
-    private lateinit var binding: ActivityLetraMusicaBinding
+    private lateinit var binding: ActivityMusicaBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
-        binding = ActivityLetraMusicaBinding.inflate(layoutInflater)
+        binding = ActivityMusicaBinding.inflate(layoutInflater)
         super.onCreate(savedInstanceState)
         setContentView(binding.root)
 
@@ -35,15 +35,15 @@ class LetraMusicaActivity : AppCompatActivity() {
     }
 
     fun receberInformacao() {
-        val intentMusica = intent.getParcelableExtra<Musica>(CHAVE_MUSICA)
+        val intentMusic = intent.getParcelableExtra<Music>(CHAVE_MUSICA)
 
-        if (intentMusica != null) {
-            receberInformacoes(intentMusica)
+        if (intentMusic != null) {
+            receberInformacoes(intentMusic)
         }
     }
 
-    fun receberInformacoes(musica: Musica) {
-        binding.textLetraMusica.text = musica.getLetraMusica()
+    fun receberInformacoes(music: Music) {
+        binding.textLetraMusica.text = music.letterMusic
     }
 
 
