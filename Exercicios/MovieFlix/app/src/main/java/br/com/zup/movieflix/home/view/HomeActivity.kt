@@ -1,9 +1,8 @@
 package br.com.zup.movieflix.home.view
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.ViewModelProvider
-import br.com.zup.movieflix.R
 import br.com.zup.movieflix.databinding.ActivityHomeBinding
 import br.com.zup.movieflix.home.viewmodel.HomeViewModel
 
@@ -22,7 +21,7 @@ class HomeActivity : AppCompatActivity() {
         observables()
     }
 
-    private fun observables(){
+    private fun observables() {
         viewModel.response.observe(this) {
             binding.tvMovies.text = "$it"
         }
