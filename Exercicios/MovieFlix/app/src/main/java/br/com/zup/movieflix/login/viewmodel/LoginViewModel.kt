@@ -1,5 +1,6 @@
 package br.com.zup.movieflix.login.viewmodel
 
+import android.util.Log
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
@@ -12,6 +13,11 @@ class LoginViewModel : ViewModel() {
     val response: LiveData<LoginModel> = _response
 
     fun authentication (login : LoginModel){
-        _response.value = repository.authenticate(login)
+        try {
+            _response.value = repository.authenticate(login)
+        }catch (ex: Exception){
+            Log.i("Error", "------> ${ex.message}")
+        }
+
     }
 }
