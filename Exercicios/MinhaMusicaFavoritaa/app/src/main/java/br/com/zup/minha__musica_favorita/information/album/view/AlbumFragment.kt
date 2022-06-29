@@ -38,18 +38,18 @@ class AlbumFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         exhibitRecyclerView()
+        viewModel.getAllAlbum()
+        observable()
 
     }
 
     private fun exhibitRecyclerView() {
         binding.rvListaAlbum.adapter = albumAdapter
         binding.rvListaAlbum.layoutManager = GridLayoutManager(context, 2)
-        observable()
-        viewModel.getAllAlbum()
     }
 
     private fun observable() {
-        viewModel.album.observe(this.viewLifecycleOwner) {
+        viewModel.response.observe(this.viewLifecycleOwner) {
             albumAdapter.AlbumList.addAll(it)
         }
     }

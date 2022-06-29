@@ -24,11 +24,12 @@ class DirectorViewModel (application: Application): AndroidViewModel(application
 
     }
 
+    fun getFavoriteMovie(movieName: String) :Boolean {
+        return repository.getFavoriteMovie(movieName)
+    }
+
     fun saveFavoriteMovie(movieName: String, isChecked: Boolean) {
         repository.saveFavoriteMovie(movieName, isChecked)
     }
 
-    fun getFavoriteMovie(movieName: String) :Boolean {
-       return repository.getFavoriteMovie(movieName)
-    }
 }

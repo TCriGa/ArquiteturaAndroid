@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">ExercicioAula55</string>
+    <string name="dados_a_inserir">Informe os dados que deseja inserir</string>
+    <string name="salvar_informacao">Salvar informações</string>
+</resources>
