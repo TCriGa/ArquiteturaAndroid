@@ -7,24 +7,36 @@
     tools:context=".view.HomeActivity">
 
     <androidx.appcompat.widget.AppCompatEditText
-        android:id="@+id/edit_dados"
-        android:layout_margin="@dimen/margin_36"
+        android:id="@+id/edit_login"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_36"
         android:hint="@string/dados_a_inserir"
+        android:inputType="text"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <androidx.appcompat.widget.SwitchCompat
-        android:id="@+id/switch_informacoes"
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/edit_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:layout_margin="@dimen/margin_36"
-        android:text="@string/salvar_informacao"
+        android:hint="@string/senha"
+        android:inputType="number"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edit_login" />
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/button_salvar"
+        android:text="@string/salvar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:layout_constraintTop_toBottomOf="@id/edit_dados"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"/>
-
+        app:layout_constraintTop_toBottomOf="@+id/edit_password" />
 </androidx.constraintlayout.widget.ConstraintLayout>
