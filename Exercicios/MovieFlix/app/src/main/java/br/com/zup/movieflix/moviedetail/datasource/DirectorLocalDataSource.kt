@@ -6,7 +6,6 @@ import android.content.SharedPreferences
 import br.com.zup.movieflix.*
 import br.com.zup.movieflix.moviedetail.model.DirectorModel
 
-
 class DirectorLocalDataSource(private val application: Application) {
 
     private val pref: SharedPreferences =
@@ -29,7 +28,7 @@ class DirectorLocalDataSource(private val application: Application) {
         )
     )
 
-    fun getFavoriteMovie(movieName: String) : Boolean {
-       return pref.getBoolean(movieName, false)
+    fun getFavoriteMovie(movieName: String): Boolean {
+        return pref.getBoolean(movieName, false)
     }
 }

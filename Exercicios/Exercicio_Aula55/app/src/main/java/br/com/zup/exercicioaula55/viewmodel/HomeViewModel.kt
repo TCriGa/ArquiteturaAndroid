@@ -8,7 +8,6 @@ class HomeViewModel(application: Application) : AndroidViewModel(application) {
 
     private val repository = HomeRepository(application)
 
-
     fun saveInformation(login: String, password: String) {
         repository.saveFavoriteInformation(login, password)
     }
